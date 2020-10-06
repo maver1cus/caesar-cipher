@@ -6,7 +6,7 @@
     npm install
 ### Usage
 ```bash
-node caesar-cipher-cli.js -a encode -s 7 -i "./input.txt" -o "./output.txt"
+node caesar-cipher -a encode -s 7 -i "./input.txt" -o "./output.txt"
 ```
    Options:
     - -a, --action [type],     an action encode/decode
@@ -17,15 +17,15 @@ node caesar-cipher-cli.js -a encode -s 7 -i "./input.txt" -o "./output.txt"
 **Usage example:**
 
 ```bash
-node caesar-cipher-cli.js -a encode -s 7 -i "./input.txt" -o "./output.txt"
+node caesar-cipher -a encode -s 7 -i "./input.txt" -o "./output.txt"
 ```
 
 ```bash
-node caesar-cipher-cli.js --action encode --shift 7 --input plain.txt --output encoded.txt
+node caesar-cipher --action encode --shift 7 --input plain.txt --output encoded.txt
 ```
 
 ```bash
-node caesar-cipher-cli.js --action decode --shift 7 --input decoded.txt --output plain.txt
+node caesar-cipher --action decode --shift 7 --input decoded.txt --output plain.txt
 ```
 
 > input.txt

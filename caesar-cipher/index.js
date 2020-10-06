@@ -9,8 +9,8 @@ const { pipeline } = require('stream');
 
 let { action, shift, input, output } = commands.opts();
 
-input = (input) ? path.join(__dirname, input) : '';
-output = (output) ? path.join(__dirname, output) : '';
+input = (input) ? input : '';
+output = (output) ? output : '';
 
 if (action !== 'decode' && action !== 'encode') {
   process.stderr.write(
